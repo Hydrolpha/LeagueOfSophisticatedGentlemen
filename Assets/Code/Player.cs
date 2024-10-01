@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         Vector3 moveAmount = transform.right * moveInput.x + transform.forward * moveInput.y;
         moveAmount *= speed * Time.deltaTime;
 
-        //gravity auf Y
+        //gravity auf Ys
         velocity.x = moveAmount.x;
         velocity.y += gravity * Time.deltaTime * Time.deltaTime;
         velocity.z = moveAmount.z;
